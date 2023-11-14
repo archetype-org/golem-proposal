@@ -7,7 +7,7 @@ In order to terraform mars, urbit will need a rich soil to grow its software bot
 
 ## Purpose
 
-The loam proposal is slighly non-standard. Rather than proposing a single specific piece of software with sequential milestones, this document describes a "grab bag" of useful developer tools that can be built in any order or even in parallel. We are consolidating them here for ease of review, as well as to show how they are loosely united under a common initiative. 
+The loam proposal is slightly non-standard. Rather than proposing a single specific piece of software with sequential milestones, this document describes a "grab bag" of useful developer tools that can be built in any order or even in parallel. We are consolidating them here for ease of review, as well as to show how they are loosely united under a common initiative. 
 
 The main goals of these standards and tools are to make Urbit development more:
 1. **Cohesive** — It should be easy and painless to have all of the state-of-the art dev tools in your Ubrit projects out of the box, and working together
@@ -39,13 +39,13 @@ This allows for flexibility where it is important to devs while providing opinio
 ![CYOA](./img/CYOA.png)
 
 In order to facilitate this, there are a few different things that need to be built:
-1. **golem** — and urth-side CLI for project creation, scaffolding, and binary & dependency management
-2. **%silk** — a desk of threads in mars for project creation, scaffolding, and binary & dependency management
+1. **CLI (golem)** — and urth-side CLI for project creation, scaffolding, and binary & dependency management
+2. **Dojo Tool/IDE** — a desk of threads and opinionated pill for project creation, scaffolding, and binary & dependency management in mars. 
 3. **clack** — a js wrapper around conn.c to make your fakeships scriptable from JS on MacOS
-4. **%tree** — a desk for a NoSQL Store that can be used as a BaaS, allowing JS-first developers to move business logic to the frontend
-5. **Ariton** — an urbit instance of an [Egyn]() registry for managing packages, binaries, and other urbit artefacts
-6. **%our** — a DID resolver for urbit
-7. **%void**  — a curation UI for browsing packages, binaries, and other urbit artefacts
+4. **BaaS** — a desk for a NoSQL Store that can be used as a BaaS, allowing JS-first developers to move business logic to the frontend
+5. **Package Manager** — an urbit instance of an [Egyn]() registry for managing packages, binaries, and other urbit artefacts
+6. **DID Resolver** — <what actaully is this>
+7. **Curation Mechanism**  — a curation UI for browsing packages, binaries, and other urbit artefacts
 
 In addition, there are some integrations that don't fit neatly into one of these projects, included in this document as well. 
 
@@ -85,9 +85,9 @@ Here is a 500 Foot view of how the these fit together from end to end:
 
 # Milestones (Grab Bag Style)
 
-The loam proposal is slighly non-standard. Rather than proposing a single specific piece of software with sequential milestones, this document describes a "grab bag" of useful developer tools that can be built in any order or even in parallel. We are consolidating them here for ease of review, as well as to show how they are loosely united under a common initiative.
+The loam proposal is slightly non-standard. Rather than proposing a single specific piece of software with sequential milestones, this document describes a "grab bag" of useful developer tools that can be built in any order or even in parallel. We are consolidating them here for ease of review, as well as to show how they are loosely united under a common initiative.
 
-Given that, this list of milestones is not in a strict order but rather a suggested order. We try to note the few strict dependancies where possible
+Given that, this list of milestones is not in a strict order but rather a suggested order. We try to note the few strict dependencies where possible
 
 ### clack — N Stars
 
@@ -97,30 +97,30 @@ Given that, this list of milestones is not in a strict order but rather a sugges
 
 ### golem — Project Scaffolding — N Stars
 
-### %silk — Creation and Scaffolding — N Stars
+### Dojo Tool — Creation and Scaffolding — N Stars
 
-### Ariton — Contracts and Deployment — N Stars
+### Package Manager — Contracts and Deployment — N Stars
 
 ### golem — Binary and Package Management — N Stars
 
-* Dependant on Ariton.
+* Dependant on Package Manager.
 
-### %silk — Binary and Package Management — N Stars
+### Dojo Tool — Binary and Package Management — N Stars
 
-* Dependant on: Ariton.
+* Dependant on Package Manager.
 
 ### golem — Deployment Pipeline — N Stars
 
-### %silk — Deployment Pipeline — N Stars
+### Dojo Tool — Deployment Pipeline — N Stars
 
-### %tree — data store — N Stars
+### BaaS — data store — N Stars
 
-### %tree — permissions and replication — N Stars
+### BaaS — permissions and replication — N Stars
 
-### %our — N Stars
+### DID Resolver — N Stars
 
-### %void — N Stars
+### Curation Layer — N Stars
 
-* Dependant on: Ariton.
+* Dependant on Package Manager.
 
 ### Integrations: _____ — N Stars
