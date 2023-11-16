@@ -278,13 +278,13 @@ So given the following URL `did:patp:123456789abcdefghi#keys-1` the example docu
 		"type": "AgentService",
 		"serviceEndpoint": "https://agent.example.com/8377464"
 	}],
-  "metadata" : [..],
+  "metadata" : [...],
 }
 ```
 
 If one were to derefence the URL after authentication by resolving: `did:patp:123456789abcdefghi?metadata` to get the associated fields.
 To talk to an endpoint / get content:
-%poke will this string `did:patp:123456789abcdefghi?service&relativeRef=%2Fsome%2Fpath%3Fquery#frag` -> `https://agent.example.com/8377464/some/path?query#frag`
+%poke with this string `did:patp:123456789abcdefghi?service&relativeRef=%2Fsome%2Fpath%3Fquery#frag` -> `https://agent.example.com/8377464/some/path?query#frag`
 
 ## Package Manager — Design
 
