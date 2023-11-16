@@ -255,7 +255,36 @@ A preliminary design for the baas agent can be modeled as follows:
 In addition to the main state tree there is another collection for denormalized representations of the data and a tree for modelling subscriptions on foreign data. There are also stateful registries to keep track of threads used for hooks and transactions
 
 ## DID Resolver — Design
-    * …
+    * As a Urbit User, I can install a Gall Agent that resolves a DID Method on a document on my ship
+    * As an Urbit Dev, I can %poke an urbit ship with a DID using my patp to retrieve content from another ship via %scry
+    * As a Urbit Dev, I can upload a DID document to my ship
+
+Using the existing identity system methods can be accessed using my patp / signature algorithm. Owners of documents can view the entire JSON. The application will
+allow me to attempt to resolve DID requests on other ships by using the content owners patp.
+
+So given the following URL `did:patp:123456789abcdefghi#keys-1` the example document will be resolved to:
+
+```json
+{
+  "id": "did:patp:123456789abcdefghi",
+  "authentication": [{
+    "id": "did:patp:123456789abcdefghi#keys-1",
+    "type": "Ed25519VerificationKey2018",
+    "controller": "did:patp:123456789abcdefghi",
+    "publicKeyBase58": "..."
+  }],
+  "service": [{
+		"id": "did:patp:123456789abcdefghi#agent",
+		"type": "AgentService",
+		"serviceEndpoint": "https://agent.example.com/8377464"
+	}],
+  "metadata" : [..],
+}
+```
+
+If one were to derefence the URL after authentication by resolving: `did:patp:123456789abcdefghi?metadata` to get the associated fields.
+To talk to an endpoint / get content:
+%poke will this string `did:patp:123456789abcdefghi?service&relativeRef=%2Fsome%2Fpath%3Fquery#frag` -> `https://agent.example.com/8377464/some/path?query#frag`
 
 ## Package Manager — Design
 
