@@ -47,7 +47,7 @@ In order to facilitate this, there are a few different things that need to be bu
 3. **JS IPC LIbrary (clack)** — a js wrapper around conn.c to make your fakeships scriptable from JS on MacOS
 4. **BaaS** — a desk for a NoSQL Store that can be used as a BaaS, allowing JS-first developers to move business logic to the frontend
 5. **Package Manager** — an urbit instance of an [Egyn]() registry for managing packages, binaries, and other urbit artefacts, as well as a GUI to browse them
-6. **DID Resolver** — <what actaully is this>
+6. **DID Resolver** — the ability to use your patp as a DID that resolves documents on an urbit ship
 
 In addition, there are some integrations that don't fit neatly into one of these projects, included in this document as well. 
 
