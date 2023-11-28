@@ -1,13 +1,16 @@
 # Proposal: %loam — Golem + Urbit Dev Suite Grab Bag
 
 ## Elevator Pitch
-In order to terraform mars, urbit will need a rich soil to grow its software both from urth and mars. In other words, it needs %loam — a loosely-coupled set of opinionated standards and dev tools that connect the existing software and tooling into a cohesive and consistent model, so that apps being built in different parts of the terrain are more inter-navigable, and interoperable.
+
+Right now, buyilding on Urbit is building on hard mode. The developer experience has much to be desired when it comes to project creation, testing, and deploying, gaps that ultimately make incoming developers more likely to churn. As more peer to peer OS and/or application environment projects come to market, urbit will need to bridge it's best in class kernal and systems level design, with equally robust dev tools across it's stack on both urth and mars.
+
+In order to terraform mars, urbit will need a rich soil to grow its software. In other words, it needs %loam — a loosely-coupled set of opinionated standards and dev tools that connect the existing software and tooling into a cohesive and consistent model, so that apps being built in different parts of the terrain are more inter-navigable, and interoperable.
 
 # Overview
 
 ## Purpose
 
-The loam proposal is slightly non-standard. Rather than proposing a single specific piece of software with sequential milestones, this document describes a "grab bag" of useful developer tools that can be built in any order or even in parallel. We are consolidating them here for ease of review, as well as to show how they are loosely united under a common initiative. 
+Rather than proposing a single specific piece of software with sequential milestones, this document describes a "grab bag" of useful developer tools that can be built in any order or even in parallel. We are consolidating them here for ease of review, as well as to show how they are loosely united under a common initiative. 
 
 The main goals of these standards and tools are to make Urbit development more:
 1. **Cohesive** — It should be easy and painless to have all of the state-of-the art dev tools in your Ubrit projects out of the box, and working together
@@ -312,9 +315,9 @@ To talk to an endpoint / get content:
 # Milestones (Grab Bag Style)
 
 
-The loam proposal is slightly non-standard. Rather than proposing a single specific piece of software with sequential milestones, this document describes a "grab bag" of useful developer tools that can be built in any order or even in parallel. We are consolidating them here for ease of review, as well as to show how they are loosely united under a common initiative.
+Rather than proposing a single specific piece of software with sequential milestones, this document describes a "grab bag" of useful developer tools that can be built in any order or even in parallel. We are consolidating them here for ease of review, as well as to show how they are loosely united under a common initiative.
 
-Given that, this list of milestones is not in a strict order but rather a suggested order. We try to note the few strict dependencies where possible
+Given that, this list of milestones is not in a strict order but rather a suggested order. We do still note the few strict dependencies where they are known in advance.
 
 ### clack — N Stars
 
