@@ -25,7 +25,7 @@ Here is a shortlist of things that need to be solved for this goal:
 * An opinionated framework for Hoon
 * Binary Management
 * Package/Dependency Management
-* Standardized Deployment Pipeline
+* Standardized Continuous Deployment Pipeline within Mars
 * Urth-side livereload
 * Urth -> Mars Message passing
 * IAC (Infrastructure as Code) For Dev Envs
@@ -111,7 +111,7 @@ Golem is a  CLI for creating projects, managing dependencies, running a test env
 * As an Urbit Dev, I need to be able to create a project with sail, so that I can build a UI in Hoon
 * As an Urbit Dev, I need to be able to create an empty project, so that I can set up a custom front end and desk with my preferred tooling
 
-Scaffolding
+#### Scaffolding
 
 * As an Urbit Dev, I need to be able to generate a crud interface (mark, sur, lib, etc), so that I can add a data type to my app in a consistent way
 * As an Urbit Dev, I need to be able to generate sail pages and components, so that I can build modular UIs in Hoon without manually setting them up
@@ -310,10 +310,9 @@ To talk to an endpoint / get content:
 
 ### Engineering Design
 
-* [See Egyn Whitepaper](https://cdn.githubraw.com/archetype-org/archetype-org.github.io/ba0b901d1b308bd06f67d0c5bbd8e0ce6ed9fcf1/whitepaper.pdf)
-  * The Urbit registry will be an instance of the Egyn stack, specific to Urbit.
+* [See Egyn Whitepaper](https://cdn.githubraw.com/archetype-org/archetype-org.github.io/ba0b901d1b308bd06f67d0c5bbd8e0ce6ed9fcf1/whitepaper.pdf) — The Urbit registry will be an instance of the Egyn stack, specific to Urbit.
 
-# Milestones (Grab Bag Style)
+# Milestones (Grab Bag)
 
 
 Rather than proposing a single specific piece of software with sequential milestones, this document describes a "grab bag" of useful developer tools that can be built in any order or even in parallel. We are consolidating them here for ease of review, as well as to show how they are loosely united under a common initiative.
@@ -340,7 +339,7 @@ Given that, this list of milestones is not in a strict order but rather a sugges
 
 * Dependant on Package Manager.
 
-### golem — Deployment Pipeline — N Stars
+### golem — Continuous Deployment Pipeline — N Stars
 
 ### Dojo Tool — Deployment Pipeline — N Stars
 
