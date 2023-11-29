@@ -40,6 +40,8 @@ You should be able to take advantage of these things — \
 This allows for flexibility where it is important to devs while providing opinions and standards for the things that get overlooked and take up development time when creating new projects and companies. 
 
 ![CYOA](./img/CYOA.png)
+
+### Framework 
 Essentially, Urbit is ripe for a full-stack framework: a set of standards for how to structure Hoon and Javascript projects as well as tooling for creating, scaffolding, and distributing projects.
 
 In order to facilitate this, there are a few different things that need to be built:
